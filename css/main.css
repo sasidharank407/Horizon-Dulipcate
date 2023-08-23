@@ -1,0 +1,401 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ff9900;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #ff9900;
+}
+
+/* Animating the hero section */
+.hero {
+    background-image: url('background/3.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 5rem;
+    color: #;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #D7DBDD;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero:hover::before {
+    opacity: 1;
+}
+
+
+/* Animating service sections */
+.services {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color:#FDFEFE; /* Light gray background */
+}
+
+
+.service {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color:#FDFEFE;/* White background */
+    color:  #131212; /* Dark gray text color */
+   background-size: cover;
+   position: relative;
+}
+.service::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the opacity value (0.5) as needed */
+    z-index: -1;
+}
+
+.service.service1 {
+    background-image: url('background/13.jpg');
+}
+
+.service.service2 {
+    background-image:url('background/18.jpg');
+}
+.service.service3 {
+    background-image: url('background/16.jpg');
+}
+
+.service.service4 {
+    background-image: url('background/15.jpg');
+}
+.service.service5{
+    background-image: url('background/21.jpg');
+}
+.service.service6{
+    background-image: url('background/20.jpg');
+}
+
+.service.service7{
+    background-image: url('background/22.jpg');
+}
+
+.service.service8{
+    background-image: url('background/24.jpg');
+}
+.service.service9{
+    background-image: url('background/25.png');
+}
+
+
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2; /* Light gray background on hover */
+}
+.service a {
+    text-decoration: none;
+ color: white; /* Use the inherited color */
+}
+
+/* More Services section styles */
+.more-services {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FDFEFE;/* Light gray background */
+}
+
+.more-services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.more-services .service {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark gray text color */
+}
+
+.more-services .service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffe8cc;  /* Light gray background on hover */
+}
+
+/* About section styles */
+.about {
+    padding: 5rem;
+    background-color: #FDFEFE; /* Light gray background */
+}
+
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 5rem;
+    background-color: #FDFEFE; /* White background */
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* More About section styles */
+.more-about {
+   padding: 5rem;
+    background-color: #FDFEFE; /* Light gray background */
+}
+
+.more-about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.more-about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Testimonials section styles */
+/* Testimonials section styles */
+.testimonials ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    grid-gap: 1rem; /* Gap between grid items */
+    justify-items: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    margin-top: 2rem;
+    padding: 0;
+}
+
+.testimonials li {
+    margin: 0; /* Remove margin to adjust the grid gap */
+}
+
+.testimonials img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.testimonials img:hover {
+    opacity: 1;
+}
+
+
+
+/* Products section styles */
+.products {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FDFEFE; /* Light blue background */
+}
+
+.product {
+    margin-bottom: 3rem;
+    padding: 5rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark gray text color */
+}
+.product1 {
+    background-image: url('background/10.jpg');
+    /* Other styling for product 1 */
+}
+
+.product2 {
+    background-image: url('background/9.jpg');
+    /* Other styling for product 2 */
+}
+
+.product3 {
+    background-image: url('background/11.jpg');
+    /* Other styling for product 3 */
+}
+
+.product4 {
+    background-image: url('background/12.jpg');
+    /* Other styling for product 4 */
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2; /* Light gray background on hover */
+}
+.products a {
+    text-decoration: none; /* Remove underlines */
+    color: white; /* Use the inherited color */
+}
+
+.products a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Section animation styles */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.nav-links a.active {
+    color: #ff9900; /* Change this to your preferred active link color */
+    font-weight: bold;
+    /* You can add more styling as needed */
+}
+
+
+/* Portfolio section styles */
+.portfolio {
+    padding: 5rem;
+    background-image: url('background/1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #131212; /* Adjust text color for better visibility on the background image */
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio h2 span {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #DA2E09; /* Your desired background color */
+    color: #131212; /* Text color for the highlighted word */
+    border-radius: 5px;
+}
+
+.portfolio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 2rem;
+}
+
+.portfolio .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.portfolio-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border: 1px solid #ddd;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    width: 300px;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}
+

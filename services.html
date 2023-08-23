@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Horizon Softnet Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Horizon Softnet Solutions - Services</title>
+</head>
+<body>
+    <header>
+       <nav>
+    <div class="logo">Horizon Softnet Solutions</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+     </nav>
+    </header>
+
+    <section class="services section">
+        <h2>Our Services</h2>
+        <div class="service service5">
+               <a href="index.html">
+            <h3>Web Development</h3>
+            <p>We create stunning websites that engage and captivate your audience.</p>
+            <p>Find More--</p>
+        </a>
+        </div>
+        <div class="service service6">
+            <a href="index.html">
+            <h3>Mobile App Development</h3>
+            <p>Build powerful and user-friendly mobile apps for your business.</p>
+            <p>Find More--</p>
+        </a>
+        </div>
+       
+        <div class="service service7">
+              <a href="index.html">
+            <h3>Data Analytics</h3>
+            <p>We provide advanced data analysis solutions to help you gain valuable insights from your data.</p>
+            <p>Find More--</p>
+        </a>
+        </div>
+       <div class="service service8">
+            <a href="index.html">
+            <h3>E-commerce Solutions</h3>
+            <p>Build and optimize e-commerce platforms to maximize sales and customer satisfaction.</p>
+             <p>Find More--</p>
+        </a>
+        </div>
+
+        <div class="service service9">
+            <a href="index.html">
+            <h3>UI/UX Design</h3>
+            <p>Craft visually appealing and intuitive user interfaces that enhance user experiences.</p>
+             <p>Find More--</p>
+        </a>
+        </div>
+        <!-- Add more services as needed -->
+    </section>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Horizon Softnet Solutions. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to trigger animations on scroll
+        const sections = document.querySelectorAll('.section');
+
+        const checkScroll = () => {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+    </script> 
+</body>
+</html>

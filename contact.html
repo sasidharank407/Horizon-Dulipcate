@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Horizon Softnet Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Horizon Softnet Solutions - Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+    <div class="logo">Horizon Softnet Solutions</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+     </nav>
+    </header>
+
+    
+        <section class="contact section">
+        <h2>Contact Us</h2>
+        <p>If you're interested in our services or have any questions, feel free to get in touch with us:</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@horizonsoftnet.com">info@horizonsoftnet.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+      <section class="more-about section">
+        <h2>More About Horizon Softnet Solutions</h2>
+        <p>We are passionate about delivering cutting-edge software solutions that drive business growth. Our team of skilled professionals specializes in creating customized web and mobile applications that meet your unique requirements.</p>
+        <p>At Horizon Softnet Solutions, we pride ourselves on our commitment to excellence, innovation, and client satisfaction. Our goal is to empower your business with technology that makes a real impact.</p>
+    </section>
+  
+
+    <!-- Additional Contact section -->
+    <section class="more-contact">
+        <h2>Get In Touch</h2>
+        <p>If you have any inquiries or need more information, please reach out to us:</p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:info@horizonsoftnet.com">info@horizonsoftnet.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <footer> <p>&copy; 2023 Horizon Softnet Solutions. All rights reserved.</p>
+    </footer>
+
+   <script>
+        // JavaScript to trigger animations on scroll
+        const sections = document.querySelectorAll('.section');
+
+        const checkScroll = () => {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add('visible');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('load', checkScroll);
+    </script> 
+</body>
+</html>
